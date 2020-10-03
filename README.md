@@ -7,6 +7,8 @@ This repo contains scaffolding setup for Node/Express REST API backend using the
 
 ## Scaffolding without Git
 
+To scaffold this in your project without git, create an empty folder and cd into it and run this command to clone this without git.
+
 ```
 npx degit https://github.com/routbisu/node-express-boilerplate
 ```
