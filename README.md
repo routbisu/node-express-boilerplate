@@ -1,6 +1,9 @@
 # <App> Backend - v1.0
 
-This repo contains backend services (REST API) for Lockd RN app.
+This repo contains scaffolding setup for Node/Express REST API backend using these services - 
+- Babel for ES6 support
+- GCP App Engine
+- Env variables
 
 ## Scaffolding without Git
 
@@ -19,10 +22,6 @@ npm ci
 ```
 npm run dev
 ```
-
-## API Documentation
-
-Please find docs [here](https://docs.google.com/document/d/1MAMuSAdEvtrpVXa8Vzriw-a9FxXRIhdoF7GngBq8Iig/edit?usp=sharing).
 
 ## Deployment
 
