@@ -1,0 +1,5 @@
+{
+  "exec": "npm run local",
+  "watch": [".env", "package*.json", ".babelrc", "src/*"],
+  "ignore": ["**/__tests__/**", "*.test.js", "*.spec.js"]
+}

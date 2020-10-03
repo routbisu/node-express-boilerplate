@@ -1,0 +1,47 @@
+{
+  "name": "lockd-backend-v1.0",
+  "version": "1.0.0",
+  "description": "Backend services for Lockd RN App",
+  "main": "index.js",
+  "scripts": {
+    "local": "babel-node -- src/index.js",
+    "dev": "nodemon",
+    "clean": "rimraf dist",
+    "transpile": "babel --copy-files src --out-dir dist",
+    "build": "run-s clean transpile",
+    "staging": "gcloud app deploy .app.staging.yaml --project=studex-ppe",
+    "prod": "gcloud app deploy .app.prod.yaml --project=studex-production",
+    "deploy:staging": "run-s build staging",
+    "deploy:prod": "run-s build prod",
+    "start:cloud": "node dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/golockd/lockd-backend-v1.0.git"
+  },
+  "keywords": [
+    "Backend"
+  ],
+  "author": "Lockd Engineering",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/golockd/lockd-backend-v1.0/issues"
+  },
+  "homepage": "https://gitlab.com/golockd/lockd-backend-v1.0#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.11.6",
+    "@babel/core": "^7.11.6",
+    "@babel/node": "^7.10.5",
+    "@babel/preset-env": "^7.11.5",
+    "@babel/preset-react": "^7.10.4",
+    "dotenv": "^8.2.0",
+    "nodemon": "^2.0.4",
+    "npm-run-all": "^4.1.5",
+    "rimraf": "^3.0.2"
+  },
+  "dependencies": {
+    "axios": "^0.20.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  }
+}
