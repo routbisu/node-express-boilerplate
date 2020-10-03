@@ -1,6 +1,12 @@
-# Lockd Backend - v1.0
+# <App> Backend - v1.0
 
 This repo contains backend services (REST API) for Lockd RN app.
+
+## Scaffolding without Git
+
+```
+npx degit https://github.com/routbisu/node-express-boilerplate
+```
 
 ## Installation
 
